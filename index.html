@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piggyvest | Dashboard</title>
     <link rel = "icon" href = "https://res.cloudinary.com/mojisola/image/upload/v1585991539/piggyvest_padlock_icon_wwsylw.webp" type = "image/icon"> 
-	<style> body {
+  <style> 
+    body {
     background-color: #add8e6;
     justify-content: center;
     display: flex;
@@ -20,8 +21,6 @@
     margin-bottom: 40px;
     margin-top: 40px;
 }
-
-
 div {
     border-radius: 20px;
     border-bottom-left-radius: 0px;
@@ -31,21 +30,34 @@ div {
     background: size 50;
     font-size: 14px;
     width: 350px;
-max-width: 80%;
-    scale: 1;
-    overflow: auto
   }
-
+  @media screen and (max-width: 600px) {
+  body {
+    width:fit-content; 
+  }
+}
+@media screen and (max-width: 600px) {
+  div {
+    width:fit-content;
+    justify-content: center;
+  }
+}
 
 h1 {
     color: blue;
     text-align: center;
-    line-height: 0%;
+    border-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    line-height: 1;
     
-}
+  }
+    
 .center-text {
   text-align: center;
-  line-height: 50%;
+  line-height: 1;
+  margin-top: 0px;
+  
 }
 
 input, select {
@@ -60,19 +72,6 @@ input, select {
     background-color: rgba(99, 137, 197, 0.329);
     box-sizing: content-box;
     font-family: inherit;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
-select:after {
-  content: '<>';
-  font: 17px "Consolas", monospace;
-  color: rgb(8, 8, 8);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  right: 11px;
 }
   option:hover {
       background-color: dodgerblue;
